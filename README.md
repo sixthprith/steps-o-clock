@@ -1,4 +1,4 @@
-# Baddie Baddie Steps'o Clock
+# Baddie Baddie Step O' Clock
 
 Private analytics page for a group step challenge (Sept 8 - Dec 5, 2026), served from GitHub Pages.
 
