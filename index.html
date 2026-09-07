@@ -40,7 +40,7 @@ body{
   font-size:15.5px; line-height:1.62; font-synthesis-weight:none;
 }
 .wrap{max-width:1120px; margin:0 auto; padding:0 26px 110px}
-.display{font-family:"Archivo",Impact,system-ui,sans-serif; font-stretch:122%; font-weight:700; letter-spacing:-.012em}
+.display{font-family:"Archivo",Impact,system-ui,sans-serif; font-stretch:106%; font-weight:700; letter-spacing:-.012em}
 .mono{font-family:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
 .eyebrow{font-family:"DM Mono",monospace; font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--muted)}
 h1,h2,h3{margin:0; text-wrap:balance}
@@ -51,7 +51,7 @@ h1,h2,h3{margin:0; text-wrap:balance}
   background:linear-gradient(rgba(51,35,28,.55),rgba(51,35,28,.72)), var(--plaza) center/cover no-repeat, var(--paper)}
 .lockcard{width:min(430px,100%); background:var(--tile); padding:32px 30px 28px; border-radius:var(--r);
   box-shadow:14px 20px 44px -18px rgba(40,24,14,.55)}
-.lockcard h1{font-family:"Archivo",Impact,sans-serif; font-stretch:122%; font-weight:700; letter-spacing:-.015em;
+.lockcard h1{font-family:"Archivo",Impact,sans-serif; font-stretch:106%; font-weight:700; letter-spacing:-.015em;
   font-size:34px; line-height:.98; margin:12px 0 8px; color:var(--ink)}
 .lockcard p{color:var(--ink-2); font-size:14px; margin:0 0 22px}
 .field{display:flex; gap:8px}
@@ -69,39 +69,41 @@ button[disabled]{opacity:.6; cursor:progress}
 /* ---------- banner ---------- */
 .banner{position:relative; height:clamp(260px,34vw,400px); overflow:hidden; background:var(--plaza) center 38%/cover no-repeat}
 .banner::after{content:""; position:absolute; inset:0;
-  background:linear-gradient(100deg,rgba(43,27,19,.86) 0%,rgba(43,27,19,.62) 34%,rgba(43,27,19,.06) 62%,rgba(43,27,19,0) 100%)}
+  background:
+    linear-gradient(103deg,rgba(38,24,16,.93) 0%,rgba(38,24,16,.80) 28%,rgba(38,24,16,.42) 52%,rgba(38,24,16,.12) 78%,rgba(38,24,16,.04) 100%),
+    linear-gradient(to top,rgba(38,24,16,.62) 0%,rgba(38,24,16,.10) 46%,rgba(38,24,16,0) 70%)}
 .bannerin{position:relative; z-index:2; max-width:1120px; margin:0 auto; padding:0 26px; height:100%;
   display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:30px}
 .banner .eyebrow{color:#E5CDB4}
-h1.title{font-family:"Archivo",Impact,sans-serif; font-stretch:125%; font-weight:800; letter-spacing:-.02em;
-  font-size:clamp(38px,6.4vw,70px); line-height:.9; color:#FFF6E9; margin:10px 0 0; max-width:15ch}
+h1.title{font-family:"Archivo",Impact,sans-serif; font-stretch:107%; font-weight:800; letter-spacing:-.02em;
+  font-size:clamp(38px,6.2vw,68px); line-height:.94; letter-spacing:-.022em; color:#FFF6E9; margin:10px 0 0; max-width:15ch}
 h1.title span{color:#F0A87C}
 .bannermeta{display:flex; gap:26px; flex-wrap:wrap; margin-top:20px}
 .bm{display:flex; flex-direction:column; gap:2px}
 .bm .eyebrow{color:#CBB49C}
-.bm b{font-family:"Archivo",sans-serif; font-stretch:118%; font-weight:700; font-size:23px; line-height:1.1; color:#FFF6E9}
+.bm b{font-family:"Archivo",sans-serif; font-stretch:105%; font-weight:700; font-size:23px; line-height:1.1; color:#FFF6E9}
 .bm b.hi{color:#F0A87C}
 
 /* ---------- intro ---------- */
 .tagline{margin:34px 0 0; color:var(--ink-2); max-width:64ch; font-size:16px}
 .tagline b{color:var(--ink); font-weight:600}
 .hero{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 20px; margin:36px 0 0}
-.herofig{font-family:"Archivo",Impact,sans-serif; font-stretch:125%; font-weight:800; letter-spacing:-.03em;
+.herofig{font-family:"Archivo",Impact,sans-serif; font-stretch:107%; font-weight:800; letter-spacing:-.03em;
   font-size:clamp(62px,11.5vw,124px); line-height:.84; color:var(--brick)}
 .herounit{font-family:"DM Mono",monospace; font-size:12.5px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted)}
 .kpis{display:grid; grid-template-columns:repeat(auto-fit,minmax(196px,1fr)); gap:14px; margin-top:30px}
 .kpi{background:var(--tile); border:1px solid var(--hair); border-radius:var(--r); padding:18px 20px 17px;
   display:flex; flex-direction:column; gap:6px; box-shadow:9px 13px 26px -16px var(--shade)}
-.kpi .v{font-family:"Archivo",sans-serif; font-stretch:120%; font-weight:700; font-size:37px; line-height:1; color:var(--ink)}
+.kpi .v{font-family:"Archivo",sans-serif; font-stretch:105%; font-weight:700; font-size:37px; line-height:1; color:var(--ink)}
 .kpi .l{font-size:13px; color:var(--ink-2); line-height:1.4}
 
 /* ---------- injured reserve ---------- */
 .injury{margin-top:22px; background:var(--tile); border:1px solid var(--hair); border-left:4px solid var(--brick);
   border-radius:var(--r); box-shadow:9px 13px 26px -16px var(--shade);
   display:grid; grid-template-columns:1fr auto; gap:26px; align-items:center; padding:20px 24px}
-.injury .who{font-family:"Archivo",sans-serif; font-stretch:120%; font-weight:700; font-size:25px; line-height:1.1; margin:5px 0 6px}
+.injury .who{font-family:"Archivo",sans-serif; font-stretch:105%; font-weight:700; font-size:25px; line-height:1.1; margin:5px 0 6px}
 .injury .body{color:var(--ink-2); font-size:13.5px; max-width:60ch; margin:0}
-.injury .tag{font-family:"Archivo",sans-serif; font-stretch:122%; font-weight:800; letter-spacing:-.015em;
+.injury .tag{font-family:"Archivo",sans-serif; font-stretch:106%; font-weight:800; letter-spacing:-.015em;
   font-size:clamp(20px,3.2vw,31px); line-height:1; color:var(--brick); white-space:nowrap; text-align:right}
 .injury .toes{font-family:"DM Mono",monospace; font-size:10px; letter-spacing:.14em; text-transform:uppercase;
   color:var(--muted); text-align:right; margin-top:7px; display:block}
@@ -113,7 +115,7 @@ section{margin-top:66px}
 .snum{width:20px; height:20px; flex:none; background:var(--brick); border-radius:1px; position:relative}
 .snum span{position:absolute; inset:0; display:grid; place-items:center; font-family:"DM Mono",monospace;
   font-size:10.5px; color:#FFF6E9}
-.shead h2{font-family:"Archivo",sans-serif; font-stretch:122%; font-weight:700; letter-spacing:-.012em; font-size:27px; line-height:1.1}
+.shead h2{font-family:"Archivo",sans-serif; font-stretch:106%; font-weight:700; letter-spacing:-.012em; font-size:27px; line-height:1.1}
 .sdek{color:var(--ink-2); font-size:15px; max-width:70ch; margin:16px 0 26px}
 .sdek b{color:var(--ink); font-weight:600}
 
